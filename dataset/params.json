@@ -1,0 +1,35 @@
+{
+  "datasets": [
+    {
+      "signature_train_list": "/export/dev/StrokeBasedRNN/1v1_mobisig_train.txt",
+      "signature_val_list": "/export/dev/StrokeBasedRNN/1v1_mobisig_val.txt",
+      "dir_path": "/export/dev/StrokeBasedRNN/mobisig_processed/"
+    },
+    
+  ],
+  "is_augment": false,
+  "learning_rate": 1e-4,
+  "batch_size": 16,
+  "num_epochs": 18,
+  "use_batch_norm": true,
+  "keep_prob": 0.5,
+  "features": 48,
+  "max_sequence_length": 2000,
+  "stroke_encoder": true,
+  "random_forged": true,
+  "attention": false,
+  "stroke_base": false,
+  "global_feature": false,
+  "global_feature_num": 61,
+  "convolution": false,
+  "bidirectional": true,
+  "length_per_stroke": 400,
+  "length_per_signature": 20,
+  "early_concat": true,
+  "num_parallel_calls": 4,
+  "save_summary_steps": 100,
+  "save_checkpoints_steps": 300,
+  "num_gpus": 4,
+  "keep_checkpoint_max": 30,
+  "eval_steps": 10
+}
