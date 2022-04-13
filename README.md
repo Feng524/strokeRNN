@@ -12,7 +12,7 @@ Codes for paper : "A Stroke-based RNN for Writer-Independent Online Signature Ve
 
 - 运行训练文件
 ``` python
-tar zxvf no_encoder.tar.gz
+解压 no_encoder.tar.zip
 python run_run.py 
 ```
 如果需要用预训练的权重，解压 no_encoder.tar.gz，训练中需要关注dataset/params.json这个文件，里面包含里训练相关的配置
